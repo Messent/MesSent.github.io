@@ -97,6 +97,20 @@ body {
     font-size: .24rem;
     margin-top: .2rem;
 }
+.body-box .refresh-box{
+    display: flex;
+    align-items: center;
+    margin-top: .31rem;
+}
+.body-box .refresh-box img{
+    width: .3rem;
+    height: .3rem;
+}
+.body-box .refresh-box span{
+    font-size:.3rem;
+    color:rgba(255,150,0,1);
+    margin-left: .19rem;
+}
 .body-box .body-content{
     font-size: .3rem;
     color: #292929;
@@ -104,7 +118,7 @@ body {
     width: 100%;
 }
 .body-box .body-content div{
-    margin-bottom: .5rem;
+    margin-bottom: .28rem;
 }
 .body-box .body-content .content-title{
     color: #999;
