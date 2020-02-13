@@ -1,0 +1,128 @@
+html{
+    height: 100%;
+}
+
+
+
+::-webkit-scrollbar {
+
+    opacity: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    font-family: PingFang SC;
+    font-size: .16rem;
+
+}
+.root-box{
+    height: 100%;
+}
+
+.root-box .nav-box {
+    height: .88rem;
+    display: flex;
+}
+
+.root-box .nav-box .left,.root-box .nav-box .right {
+    width: .8rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-box .left img{
+    width: .44rem;
+    height: .44rem;
+}
+.root-box .nav-box .center {
+    flex: 1;
+    font-size: .36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-box{
+    display: flex;
+    justify-content: space-between;
+    padding: .56rem .6rem 0 .6rem;
+    align-items: center;
+}
+.head-box .head-title{
+    font-size: .32rem;
+    color: #333;
+    font-weight: bold;
+}
+.head-box .symbol{
+    font-size: .28rem;
+    color: #FF3839;
+}
+.head-box .integer{
+    font-size: .5rem;
+    font-weight: bold;
+    color: #FF3839;
+}
+.head-box .decimals{
+    font-size: .36rem;
+    font-weight: bold;
+    color: #FF3839;
+
+}
+.body-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 .6rem 0 .6rem;
+}
+.body-box .img-box{
+    padding: .1rem;
+    box-shadow:0 .02rem .08rem rgba(51,51,51,0.2);
+    border-radius: .16rem;
+    margin-top: .52rem;
+    overflow: hidden;
+
+}
+.img-box img{
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: .16rem;
+}
+.body-box .img-title{
+    color: #999;
+    font-size: .24rem;
+    margin-top: .2rem;
+}
+.body-box .body-content{
+    font-size: .3rem;
+    color: #292929;
+    margin-top: .66rem;
+    width: 100%;
+}
+.body-box .body-content div{
+    margin-bottom: .5rem;
+}
+.body-box .body-content .content-title{
+    color: #999;
+    margin-right: .12rem;
+
+}
+.footer-box{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer-box .footer-button{
+    width: 100%;
+    height: 1.01rem;
+    color: #fff;
+    background-color: #FF5758;
+    text-align: center;
+    line-height: 1.01rem;
+    font-weight: 300;
+    font-size: 0.3rem;
+}
