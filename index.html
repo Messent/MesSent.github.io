@@ -51,8 +51,10 @@
     function getKeyAndOrderCode() {
         jsBridge.getToken().then(res => {
             sessionStorage.setItem('key', res)
+            console.log('token'+res)
             jsBridge.getOrderCode().then(res => {
                 orderCode = res
+                console.log('orderCode'+orderCode)
                 getOrderPremium()
             })
 
@@ -88,7 +90,7 @@
     function getOrderPremium() {
         orderPay.getOrderPremium(orderCode)
             .then(res => {
-                console.log(res)
+                console.log('数据'+res)
                 let datas = res.data;
                 let imgBox = $('.img-box img');
                 imgBox.attr('src', 'data:image/jpeg;base64,' + datas.pay_qrcode);
