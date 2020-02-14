@@ -52,6 +52,7 @@
         jsBridge.getToken().then(res => {
             sessionStorage.setItem('key', res)
             console.log('token'+res)
+            console.log('sessionToken'+sessionStorage.getItem('key'))
             jsBridge.getOrderCode().then(res => {
                 orderCode = res
                 console.log('orderCode'+orderCode)
