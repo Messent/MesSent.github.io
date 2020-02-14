@@ -7,6 +7,7 @@
     <script src="static/js/rem.js"></script>
     <script src="static/js/jsBridge.js"></script>
     <script src="static/js/orderPay.js"></script>
+    <script src="static/js/vconsole.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/index.css">
 </head>
@@ -46,7 +47,7 @@
 </html>
 <script>
     let orderCode = ''
-
+    let vConsole = new VConsole() // 初始化
     function getKeyAndOrderCode() {
         jsBridge.getToken().then(res => {
             sessionStorage.setItem('key', res)
